@@ -13,11 +13,9 @@
             padding: 20px;
         }
 
-        h1 {
-            font-size: 2.5em;
+        h1, h2 {
             text-align: center;
-            color: #ffcc00;
-            margin-bottom: 10px;
+            color: #4441ff;
         }
 
         .container {
@@ -26,11 +24,11 @@
             background: #2c2c2c;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.15);
+            box-shadow: 0 0 20px rgb(7, 6, 53);
         }
 
         a {
-            color: #ff6699;
+            color: #669cff;
             text-decoration: none;
         }
 
@@ -42,13 +40,15 @@
             display: block;
             margin: 20px auto;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+            box-shadow: 0 0 10px rgb(7, 6, 53);
+            max-width: 100%;
+            height: auto;
         }
 
         iframe {
             display: block;
             margin: 30px auto;
-            border: 2px solid #ffcc00;
+            border: 2px solid #4441ff;
             border-radius: 8px;
         }
 
@@ -56,23 +56,23 @@
             font-style: italic;
             margin: 15px 0;
             padding-left: 15px;
-            border-left: 4px solid #ffcc00;
+            border-left: 4px solid #4441ff;
             color: #cccccc;
         }
 
         .botao-projeto {
-            background-color: #ffcc00;
-            color: #1a1a1a;
+            background-color: #201E71;
+            color: #ffffff;
             padding: 12px 24px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+            box-shadow: 0 4px 8px rgb(7, 6, 53);
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         .botao-projeto:hover {
-            background-color: #ffdb4d;
+            background-color: #312fad;
             transform: scale(1.05);
         }
 
@@ -82,6 +82,10 @@
             gap: 20px;
             flex-wrap: wrap;
             margin-top: 20px;
+        }
+
+        p {
+            text-align: justify;
         }
     </style>
 </head>
@@ -102,7 +106,7 @@
         <blockquote>"Não gostou? Vire do secretariado."</blockquote>
         <blockquote>"Não domino o mundo pois sou limitado pela tecnologia de meu tempo."</blockquote>
 
-        <img src="ENT.jpg" alt="Foto de Enzo Neckel Tomaz" height="384" width="177">
+        <img src="ENT.jpg" alt="Foto de Enzo Neckel Tomaz">
 
         <p><strong>Vídeo favorito:</strong></p>
         <iframe width="560" height="315"
@@ -113,7 +117,7 @@
             allowfullscreen>
         </iframe>
 
-        <h2 style="text-align: center; color: #ffcc00; margin-top: 40px;">Projetos Desenvolvidos</h2>
+        <h2 style="margin-top: 40px;">Projetos Desenvolvidos</h2>
         <div class="botoes-projetos">
             <a href="projeto1.html" class="botao-projeto">CPMUN</a>
             <a href="projeto2.html" class="botao-projeto">Projeto 2</a>
