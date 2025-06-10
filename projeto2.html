@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <title>Projeto 2 - Quiz Medieval</title>
     <style>
+        :root {
+            --azul-principal: #201E71;
+            --azul-claro: #3A3EB3;
+            --azul-fundo: #14152B;
+            --amarelo-destaque: #FFD447;
+            --amarelo-hover: #FFE791;
+        }
+
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a1a;
+            background-color: var(--azul-fundo);
             color: #e0e0e0;
             line-height: 1.6;
             padding: 20px;
@@ -16,52 +24,53 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: #2c2c2c;
+            background: #1c1d3b;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 0 20px rgb(7, 6, 53);
+            box-shadow: 0 0 20px rgba(32, 30, 113, 0.7);
         }
 
-        h1, h2 {
+        h1 {
             text-align: center;
-            color: #4441ff;
+            color: var(--amarelo-destaque);
         }
 
         .botao-voltar {
             display: inline-block;
-            background-color: #201E71;
+            background-color: var(--azul-principal);
             color: #ffffff;
             padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgb(7, 6, 53);
+            box-shadow: 0 4px 8px rgba(7, 6, 53, 0.6);
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         .botao-voltar:hover {
-            background-color: #312fad;
+            background-color: var(--azul-claro);
             transform: scale(1.05);
         }
 
         .imagem-principal {
             display: block;
-            background-color: rgb(24, 24, 24);
+            background-color: #1c1d3b;
             margin: 0 auto 30px auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgb(7, 6, 53);
+            box-shadow: 0 0 10px rgba(32, 30, 113, 0.5);
             max-width: 100%;
             height: auto;
         }
 
         a {
-            color: #669cff;
+            color: var(--amarelo-destaque);
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
+            color: var(--amarelo-hover);
         }
 
         p {
