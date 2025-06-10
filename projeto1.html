@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <title>Projeto 1 - CPMUN</title>
     <style>
+        :root {
+            --azul-principal: #201E71;
+            --azul-claro: #3A3EB3;
+            --azul-fundo: #14152B;
+            --amarelo-destaque: #FFD447;
+            --amarelo-hover: #FFE791;
+        }
+
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a1a;
+            background-color: var(--azul-fundo);
             color: #e0e0e0;
             line-height: 1.6;
             padding: 20px;
@@ -16,67 +24,68 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: #2c2c2c;
+            background: #1c1d3b;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 0 20px rgb(7, 6, 53);
+            box-shadow: 0 0 20px rgba(32, 30, 113, 0.7);
         }
 
         h1, h2 {
             text-align: center;
-            color: #4441ff;
+            color: var(--amarelo-destaque);
         }
 
         .botao-voltar {
             display: inline-block;
-            background-color: #201E71;
+            background-color: var(--azul-principal);
             color: #ffffff;
             padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgb(7, 6, 53);
+            box-shadow: 0 4px 8px rgba(7, 6, 53, 0.6);
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         .botao-voltar:hover {
-            background-color: #312fad;
+            background-color: var(--azul-claro);
             transform: scale(1.05);
         }
 
         .imagem-principal {
             display: block;
-            background-color: rgb(24, 24, 24);
+            background-color: #222244;
             margin: 0 auto 30px auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgb(7, 6, 53);
+            box-shadow: 0 0 10px rgba(32, 30, 113, 0.5);
             max-width: 100%;
             height: auto;
         }
 
-       .galeria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px; /* espaçamento maior entre imagens */
-        margin-top: 40px;
-    }
+        .galeria {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
 
-    .galeria img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgb(7, 6, 53);
-        background-color: #444;
+        .galeria img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(32, 30, 113, 0.5);
+            background-color: #2d2e54;
         }
 
         a {
-            color: #669cff;
+            color: var(--amarelo-destaque);
             text-decoration: none;
         }
 
         a:hover {
+            color: var(--amarelo-hover);
             text-decoration: underline;
         }
 
@@ -100,8 +109,10 @@
         <p>Desde 2024, faço parte do <strong>secretariado</strong>, órgão-chave do projeto, responsável pela realização do primeiro <strong>CPMUN</strong>, evento que reuniu colégios de Curitiba para simular no CPM. E atualmente lidero esta incrível e crescente comunidade, visando aumentar cada vez mais o legado do projeto e pavimentar seu futuro.</p>
 
         <p>Graças à dedicação daqueles que participam ativamente do <strong>CPMUN</strong>, obtivemos algumas conquistas, como a de <strong>Delegação Destaque na <a href="https://cmc.eb.mil.br/pt/" target="_blank" rel="noopener noreferrer">MundoCMC</a></strong>, modelo de simulações do <a href="https://cmc.eb.mil.br/pt/" target="_blank" rel="noopener noreferrer">Colégio Militar de Curitiba</a>, além de participações marcantes no <a href="https://www.colegiomedianeira.g12.br" target="_blank" rel="noopener noreferrer">Simed</a> (MUN do <a href="https://www.colegiomedianeira.g12.br" target="_blank" rel="noopener noreferrer">Colégio Medianeira</a>) e <a href="https://redesagradosul.com.br/unidade/colegio-social-madre-clelia-curitiba" target="_blank" rel="noopener noreferrer">SagradoMUN</a> (MUN do <a href="https://redesagradosul.com.br/unidade/colegio-social-madre-clelia-curitiba" target="_blank" rel="noopener noreferrer">Colégio Social Madre Clélia</a>).</p>
+
         <br>
-        Instragram: <a href="https://www.instagram.com/ocpmun?igsh=MTNwODJmNzY3M2E0cA==" target="_blank" rel="noopener noreferrer">@ocpmun</a>
+        Instagram: <a href="https://www.instagram.com/ocpmun?igsh=MTNwODJmNzY3M2E0cA==" target="_blank" rel="noopener noreferrer">@ocpmun</a>
+
         <h2>Galeria de Fotos</h2>
         <section class="galeria">
             <img src="Cpmun.jpg" alt="Foto do evento CPMUN">
